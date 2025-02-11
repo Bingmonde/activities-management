@@ -1,0 +1,238 @@
+swagger: "2.0"
+# Possibilité pour générateur
+# npm install -g redoc-cli
+# Generateur redoc-cli bundle -o index.html swagger.json
+# npm install -g bootprint
+# npm install -g bootprint-base
+# npm install -g bootprint-swagger
+# npm install -g bootprint-openapi
+## Autre test
+# npm install -g @apidevtools/swagger-cli
+### Autre test
+# npm install -g swagger-tools
+
+info:
+  title: Cegep
+  description: API pour le cours 345 et 456
+  version: 1.0.2
+#host: localhost:8080
+### Pour utiliser la version serverless (Certain API ne sont pas encore porté dans cette environnement)
+#host: us-central1-cegep-al.cloudfunctions.net
+#basePath: /
+### Pour utiliser la version server
+host: cegep.fdtt.space
+basePath: /v1
+#### Definition des securités
+securityDefinitions:
+   #Authorization: abcdef12345
+   APIKeyHeader:
+     type: apiKey
+     in: header
+     name: Authorization
+schemes:
+  - https
+  #- http
+paths:
+  /session:
+    post:
+      summary: Recupere un token du serveur valide pour 1 heures
+      parameters:
+        - in: body
+          name: parameters
+          description: Votre username et password
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+              password:
+                type: string
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Token valide pour 1 heures
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+                description: Token
+              error:
+                type: string
+                description: Message d'erreur si il y a lieu
+    delete:
+      summary: Detruit le token du serveur
+      security:
+        - APIKeyHeader: []
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Token fut detruit
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+                description: Token
+              error:
+                type: string
+                description: Message d'erreur si il y a lieu
+  /create_user:
+    post:
+      summary: Crée un utilisateur 
+      parameters:
+        - in: body
+          name: parameters
+          description: Votre username et password
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+              password:
+                type: string
+              email:
+                type: string
+              key:
+                type: string
+                description: Clef secret pour permettre la creation d'un utilisateur
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Réponse de confirmation
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+                description: Token
+              error:
+                type: string
+                description: Message d'erreur si il y a lieu
+
+
+  /contact/{username}:
+    get:
+      summary: Recupere tous les messages recu pour l'etudiant, 
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: Numero d'etudiant
+      security:
+        - APIKeyHeader: []
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    userid:
+                      type: string
+                    message:
+                      type: string
+                    nom:
+                      type: string
+                    prenom:
+                      type: string
+                    telephone:
+                      type: string
+                    create_date:
+                      type: object
+                      properties:
+                        value:
+                          type: string
+                          description: Format 2023-11-27T02:39:45.220Z
+    put:
+      summary: Recoit des commentaires.
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: Identificateur de l'usager
+        - in: body
+          name: parameters
+          description: Information a sauvegarder peut etre different
+          schema:
+            type: object
+            properties:
+              nom:
+                type: string
+                description: Token
+              prenom:
+                type: string
+                description: Token
+              email:
+                type: string
+                description: Token
+              telephone:
+                type: string
+                description: Token
+              message:
+                type: string
+                description: Token
+      description: Dans un Json.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /contact/{username}/{create_date}:
+    delete:
+      summary: Efface un message
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: Numero d'etudiant
+        - in: path
+          name: create_date
+          required: true
+          type: string
+          description: Date de creation du message
+      security:
+        - APIKeyHeader: []
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /contacts_count/{username}:
+    get:
+      summary: Indique le nombre de messages pour cet etudiant, 
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: ID utilisateur
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  msgs_count:
+                    type: integer
+                    description: Nombre de messages
+

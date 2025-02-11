@@ -1,0 +1,30 @@
+<div class="px-5">
+    <h2 class="my-3 mt-5" i18n>Mes messages</h2>
+    <table class="table" *ngIf="loginStatus">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Courriel</th>
+            <th scope="col">Téléphone</th>
+            <th scope="col">Message</th>
+            <th scope="col">Date de création</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" *ngFor="let message of messagesRecu; index as i">
+          <tr>
+            <th scope="row">{{i+1}}</th>
+            <td>{{message.nom}}</td>
+            <td>{{message.prenom}}</td>
+            <td>{{message.email}}</td>
+            <td>{{message.telephone}}</td>
+            <td>{{message.message}}</td>
+            <td>{{message.create_date.value.split("T")[0]}}</td>
+            <td><div class="btn btn-link" (click)="deleteMessage(i)"><i class="fa-solid fa-trash"></i></div></td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>

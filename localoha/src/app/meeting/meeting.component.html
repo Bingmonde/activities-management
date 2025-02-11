@@ -1,0 +1,81 @@
+<div class="px-5">
+  {{meetingForAffichage | json}}
+  {{parts | json}}
+</div>
+
+<div>
+  {{myMeeting | json }}
+</div>
+
+<div class="px-5">
+  <div class="row mt-3">
+    <div class="col-md-10 col-12"><h2 class="mt-5 pb-2" i18n>{{meetingForAffichage.title}}</h2></div>
+    <!-- <div class="col-md-1 col"><button class="btn btn-dark">Modifier</button></div> -->
+    <div class="col-md-1 col"><button class="btn btn-warning" role="button" data-bs-toggle="modal" data-bs-target="#shareLink">Partager</button></div>
+  </div>
+  
+
+    <div *ngIf="userActual?.username === myMeeting?.creator">Creator</div>
+    <!-- <div><i class="fa-solid fa-clock me-1"></i> Durée: </div> -->
+    <div><i class="fa-solid fa-location-dot me-1"></i>{{meetingForAffichage.location}}</div>
+    <div><i class="fa-solid fa-file-lines me-1"></i>{{meetingForAffichage.describe}}</div>
+
+    <p>Les dates proposées</p>
+    <!-- afficher pour les visiteur -->
+    <div *ngFor="let date of lesDateProp;index as i" class="btn col">
+      <div class="border border-1 border-secondary rounded order-{{date.vote}}">
+        <div>{{date.vote }} votes</div>
+        <div>{{date.d_start | date : "YYYY-MM-dd"}}</div>
+        <div>de {{date.d_start | date : "hh:mm"}} à {{date.d_end | date : "hh:mm"}}</div>
+        <button class="btn btn-dark" (click)="voterDate(i)" [ngClass]="{'btn-dark': !visiterChoice[i], 'btn-warning': visiterChoice[i]}">{{visiterChoice[i]? 'Retirer' : 'Voter'}}</button>
+      </div>
+    </div>
+ 
+    <!-- afficher pour admin -->
+    <div><i class="fa-solid fa-user-group me-1"></i>Participant<br></div>
+    <div *ngFor="let part of listParts; index as i" class="col-2">
+      <div>{{part.name}}</div>
+    </div>
+    <div class="col-10" *ngFor="let part of listParts">
+      <div class="col btn" *ngFor="let choice of part.results">
+        <div [ngClass]="{'btn-primary' : choice}">+</div>
+      </div>
+    </div>
+
+
+
+<!-- <button class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#shareLink" (click)="getShareLinkAdmin()">get share code for editor</button>
+<button class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#shareLink" (click)="getShareLinkVisiter()">get share code for editor</button> -->
+
+<!-- <button class="btn btn-dark text-white" data-bs-toggle="modal" role="button" data-bs-target="#participant_info">open info form</button> -->
+
+
+</div>
+
+
+<!-- Modal get shared link -->
+<div class="modal fade" id="shareLink" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: #366347">
+      <div class="modal-header border-0 bg-light"> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 mx-3">
+          <h5 class="text-center text-white my-3">Partager vos invitations</h5>
+          <div class="text-center">
+            <input type="text" class="form-control" (copy)="hintForcopy()" readonly [(ngModel)]="linkVisiter">
+            <!-- <p class="pt-1 text-white text-center" i18n>pour participant</p> -->
+            <button class="btn btn-warning my-2" (click)="getShareLinkVisiter()" i18n>Copier le lien pour participant</button>
+          </div>
+          <div class="text-center mt-5" *ngIf="shareLinkAdmin.length !== 0">
+            <input type="text" class="form-control" (copy)="hintForcopy()"  readonly [(ngModel)]="linkAdmin">
+            <button class="btn btn-danger my-2" (click)="getShareLinkAdmin()" i18n>Copier le lien pour administrateur</button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

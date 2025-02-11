@@ -1,0 +1,337 @@
+swagger: "2.0"
+# Possibilité pour générateur
+# npm install -g redoc-cli
+# Generateur redoc-cli bundle -o index.html swagger.json
+# npm install -g bootprint
+# npm install -g bootprint-base
+# npm install -g bootprint-swagger
+# npm install -g bootprint-openapi
+## Autre test
+# npm install -g @apidevtools/swagger-cli
+### Autre test
+# npm install -g swagger-tools
+
+info:
+  title: Base API
+  description: API de démarrage pour le cours 345 et 456
+  version: 1.0.1
+##host: cegep.fdtt.space
+##host: us-central1-bing345tps.cloudfunctions.net
+host: localhost:8080
+## basePath: /v1
+securityDefinitions:
+   # Authorization: abcdef12345
+   APIKeyHeader:
+     type: apiKey
+     in: header
+     name: Authorization
+schemes:
+  #- https
+  - http
+paths:
+  /meeting/{username}:
+    post:
+      summary: creer une reuinon
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: Identificateur de l'utilisateur
+        - in: body
+          name: parameters
+          description: info de reunion
+          schema:
+            type: object
+            properties:
+              title:
+                type: string
+              describe:
+                type: string
+              location:
+                type: string
+              dates:
+                type: object
+              deadline:
+                type: object
+      produces:
+        - application/json
+      responses:
+        200:
+          description: retourne le id et token de reunion
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+                description: Token
+              token:
+                type: string
+                description: token pour le reunion
+
+  /meeting/{meetingID}:
+    put:
+      summary: mise a jour une reunion
+      parameters:
+        - in: path
+          name: meetingID
+          required: true
+          type: integer
+          description: Identificateur de la reunion
+        - in: body
+          name: parameters
+          description: info mise a jour de la reunion
+          schema:
+            type: object
+            properties:
+              title:
+                type: string
+              describe:
+                type: string
+              location:
+                type: string
+              dates:
+                type: object
+              deadline:
+                type: object
+      produces:
+        - application/json
+      responses:
+        200:
+          description: mise à jour avec succes    
+
+  /meeting/u/{username}/{id}:
+    get:
+      summary: obtenir la reunion par id de reunion
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: Identificateur de l'utilisateur
+        - in: path
+          name: meetingID
+          required: true
+          type: integer
+          description: Identificateur de la reunion
+      security:
+        - APIKeyHeader: []
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  meeting_id:
+                    type: integer
+                    description: id de reunion
+                  title:
+                    type: string
+                    description: titre de reunion
+                  describe:
+                    type: string
+                    description: description de reunion
+                  location:
+                    type: string
+                    description: location de reunion
+                  deadline:
+                    type: object
+                    description: timestamp de reunion
+                  create_date:
+                    type: object
+                    description: timestamp de creation de reunion
+                  editor_link:
+                    type: string
+                    description: sharecode admin de reunion
+                  visiter_link:
+                    type: string
+                    description: sharecode de reunion
+                  token:
+                    type: string
+                    description: token de reunion
+    delete:
+      summary: supprimer la reunion
+      parameters:
+        - in: path
+          name: username
+          required: true
+          type: string
+          description: Identificateur de l'utilisateur
+        - in: path
+          name: meetingID
+          required: true
+          type: integer
+          description: Identificateur de la reunion
+      security:
+        - APIKeyHeader: []
+      responses:
+        200:
+          description: OK
+          schema:
+            type: boolean
+            description: retourne un boolean
+
+
+  /meeting/s/{code}:
+    get:
+      summary: obtenir la reunion par code partage
+      parameters:
+        - in: path
+          name: code
+          required: true
+          type: string
+          description: code partage de reunion
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  meet_info:
+                    type: object
+                    description: info de reunion
+                  vote_dates:
+                    type: object
+                    description: dates avec statistiques de votes
+                  parts_info:
+                    type: object
+                    description: seulement pour editeurs, pas pour visiteur
+
+  /participant:
+      post:
+        summary: creer un participant de la reuion
+        parameters:
+          - in: body
+            name: parameters
+            description: info de participant
+            schema:
+              type: object
+              properties:
+                part_id: 
+                  type: integer
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+                email:
+                  type: string
+                telephone:
+                  type: string
+        produces:
+          - application/json
+          # pas fini!!!!!
+        responses:
+          200:
+            description: retourne le id et token de reunion
+            schema:
+              type: object
+              properties:
+                part_id:
+                  type: integer
+                  description: id du participant
+                  
+  /participant/{part_id}:
+      put:
+        summary: creer un participant de la reuion
+        parameters:
+          - in: path
+            name: part_id
+            required: true
+            type: string
+            description: l'identificateur de participant
+          - in: body
+            name: parameters
+            description: info de participant mise a jour
+            schema:
+              type: object
+              properties:
+                part_id: 
+                  type: integer
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+                email:
+                  type: string
+                telephone:
+                  type: string
+        produces:
+          - application/json
+          # pas fini!!!!!
+        responses:
+          200:
+            description: retourne le boolean
+            schema:
+              type: boolean
+
+      post:
+        summary: sauvegarder la date que participant vote
+        parameters:
+          - in: path
+            name: part_id
+            required: true
+            type: string
+            description: l'identificateur de participant
+          - in: body
+            name: parameters
+            description: info de date que participant vote
+            schema:
+              type: object
+              properties:
+                date_id: 
+                  type: integer
+                d_start:
+                  type: object
+                d_end:
+                  type: object
+        produces:
+          - application/json
+          # pas fini!!!!!
+        responses:
+          200:
+            description: retourne le boolean
+            schema:
+              type: boolean
+  
+  /participant/{part_id}/{date_id}:
+      delete:
+        summary: creer un participant de la reuion
+        parameters:
+          - in: path
+            name: part_id
+            required: true
+            type: string
+            description: l'identificateur de participant
+          - in: body
+            name: parameters
+            description: info de participant mise a jour
+            schema:
+              type: object
+              properties:
+                part_id: 
+                  type: integer
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+                email:
+                  type: string
+                telephone:
+                  type: string
+        produces:
+          - application/json
+        responses:
+          200:
+            description: retourne le boolean
+            schema:
+              type: boolean

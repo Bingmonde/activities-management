@@ -1,0 +1,11 @@
+#banner {
+    height: 15vh;
+    background-image: url(/assets/images/bgpics.png);
+    background-size: cover;
+    
+}
+
+#brand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+}

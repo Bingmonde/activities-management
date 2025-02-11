@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr-CA" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="179979396683314480" datatype="html">
+        <source>À propos de nous</source>
+        <target>关于我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3786085029028575647" datatype="html">
+        <source>Bienvenu à Localoha!</source>
+        <target>欢迎来到Localoha!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7906174718398476570" datatype="html">
+        <source>/creerEvenement</source>
+        <target>/jianlihuodong</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5288020893291889119" datatype="html">
+        <source>Vous pourriez créer un événement!</source>
+        <target>您可以创建一个活动!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6969773274654830143" datatype="html">
+        <source>/consulterEvenement</source>
+        <target>/chaxunhuodong</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6848985097826083433" datatype="html">
+        <source>Vous pourriez consulter un événement!</source>
+        <target>您可以查看活动!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8936116410616827385" datatype="html">
+        <source>/documentation</source>
+        <target>/wenzhang</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1038054462747039699" datatype="html">
+        <source>Voici nos articles, bonne lecture !</source>
+        <target>这是我们的文章，祝您阅读愉快！</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="855124721508249224" datatype="html">
+        <source>/commentaire</source>
+        <target>/jianyi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5935922086006682354" datatype="html">
+        <source>Nous apprécions toujours votre commentaire précieux! </source>
+        <target>我们始终感谢您的宝贵意见! </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6186133296043944131" datatype="html">
+        <source>/reunion</source>
+        <target>/huiyi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3623319272457901146" datatype="html">
+        <source>Des réunions s&apos;en viennent!</source>
+        <target>会议还在建设中!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6103118278620987967" datatype="html">
+        <source>Connexion</source>
+        <target>登录</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3704797194560734590" datatype="html">
+        <source>Nom d&apos;utilisateur</source>
+        <target>用户名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4570977537852713449" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Nom d&apos;utilisateur</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>用户名 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2399315204367824966" datatype="html">
+        <source>Ce champ est obligatoire</source>
+        <target>必填项目</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6655859204254164582" datatype="html">
+        <source>Les lettres et chiffres seulement</source>
+        <target>只接受字母和数字</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5249891717669571568" datatype="html">
+        <source>Mot de passe</source>
+        <target>密码</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8414861633621849143" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Mot de passe</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>密码</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="502198338500824805" datatype="html">
+        <source>Il faut contenir au moins 8 caractères</source>
+        <target>必须包含至少 8 个字符</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4390770950707898456" datatype="html">
+        <source>Mot de passe oublié?</source>
+        <target>忘记密码了吗？</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9170767228545300948" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>champ obligatoire</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>必填选项</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6255671880111620823" datatype="html">
+        <source>Soumettre</source>
+        <target>提交</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/connexion/connexion.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6600201531354113386" datatype="html">
+        <source>Qui court plus vite, Monsieur Tortue ou Monsieur Lapin ?</source>
+        <target>乌龟先生和兔子先生谁跑得更快 ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2068526784501128665" datatype="html">
+        <source>Une classe de Bootstrap</source>
+        <target>关于Bootstrap的一个类</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2489933639566302590" datatype="html">
+        <source>Lire plus</source>
+        <target>更多</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8257863123271783818" datatype="html">
+        <source>Pourquoi pas un affichage flexible ?</source>
+        <target>为什么不采用响应式显示呢？</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3998929442612404393" datatype="html">
+        <source>Le magic avec les directives d&apos;Angular</source>
+        <target>Angu指令的魔法</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6032229431585422941" datatype="html">
+        <source>Sujet 3</source>
+        <target>文章 3</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7674054286769556760" datatype="html">
+        <source>Une petite intro</source>
+        <target>简介</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6846641951206227414" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Sur la page, il y a un Monsieur Tortue et Monsieur Lapin. En ce moment, Monsieur Lapin est plus avancé que Monsieur Tortue. Mais en réduisant la page, est-ce que les deux messieurs courent à même rythme ? <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Voici le résultat. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img src=&quot;assets/images/tortue-lapin.gif&quot; alt=&quot;demonstration ordre&quot;&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> À la fin, Monsieur Tortue gagne ! <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Le Bootstrap est une libraire pour faciliter le design de page web. Un fonctionnement très logique et puissant de Bootstrap est qu’il utilise le système de grilles. Les utilisateurs peuvent créer les lignes et les cols selon leurs besoins pour gérer la vue de la page. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Lorsque la taille de fenêtre change, il est possible que certains blocs doivent être présentés en haut ou en gauche. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Pour répondre à ce besoin, on peut utiliser la classe « order » pour contrôler l’ordre des blocs. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Dans l’exemple de Monsieur Tortue et Monsieur Lapin, sur l’écran de taille large, Monsieur Lapin est devant de Monsieur Tortue. Mais sur l’écran de taille plus petite, Monsieur Tortue avance plus vite que Monsieur Lapin. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Simplement appliquer la classe sous la syntaxe sur votre page pour arranger leurs places : <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="TAG_IMG_1" ctype="x-img_1" equiv-text="&lt;img src=&quot;assets/images/codes-tortue-lapin.jpg&quot; alt=&quot;codes&quot; style=&quot;width: 80vw;&quot;&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Jouez plus sur la classe « order » ! <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>页面上有一位乌龟先生和兔子先生。 目前，兔子先生比乌龟先生走得更远。 但是通过减少页面，两位先生的运行速度是否相同？ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 请看如下结果： <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img src=&quot;assets/images/tortue-lapin.gif&quot; alt=&quot;demonstration ordre&quot;&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 结果，乌龟先生赢啦！ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Bootstrap是一个促进网页设计的库。 Bootstrap的一个非常合乎逻辑且强大的操作是它使用了网格系统。 用户可以根据自己的要求创建行和列来管理页面视图。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>当窗口大小改变时，可能需要在顶部或左侧呈现一些块。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 为了满足这种需求，我们可以使用“order”类来控制块的顺序。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 在乌龟先生和兔子先生的例子中，在宽屏幕上，兔子先生位于乌龟先生的前面。 但在较小的屏幕上，乌龟先生的移动速度比兔子先生快。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 只需在页面上的语法下应用该类即可安排它们的位置： <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="TAG_IMG_1" ctype="x-img_1" equiv-text="&lt;img src=&quot;assets/images/codes-tortue-lapin.jpg&quot; alt=&quot;codes&quot; style=&quot;width: 80vw;&quot;&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 多玩点“order”这个类吧！ <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">53,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8168765646794661881" datatype="html">
+        <source>Retour</source>
+        <target>返回</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8694825405926423898" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Est-ce que vous utilisez encore div *10 pour construire des éléments pour votre page web ? Est-ce que vous voulez sortir ce travail laborieux ?<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> À nos jours, nous établissons rarement le ficher de *.html page par page. Par contre, Angular est largement utilisé pour l’application responsive. Angular offre une solution, la directive <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fw-bold&quot;&gt;"/>ngFor<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, une des 4 notions importantes dans sa stucture. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Revien à la question d’affichage flexible, nous pourrions utiliser la directive ngFor. Mais attention, on ne peut pas directement mettre ngFor comme nous utilisons ngClass. Il faut combiner * avec ngFor. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Voici un exemple de notre page web : <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img src=&quot;assets/images/exemple_ngFor.jpg&quot; alt=&quot;ngFor&quot; style=&quot;width: 60vw;&quot;&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Pour construire 9 boîtes pour le jeu Tic-Tac-Toe, nous mettons *ngFor dans un div, puis ngFor lit des éléments dans un vecteur sous forme : <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fw-bold&quot;&gt;"/>let element of vecteur; index as i; <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Par la suite, nous pourrions bind l’info dans notre page. Comme notre vecteur contient 9 éléments, donc 9 boîtes sont construites ainsi. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> La forme ci-dessous sont basique. ngFor offre des autres attributs pour servir nos besoins. Si nous voulons identifier le premier élément, il faut simplement ajouter first as isFirst. Dans ce cas isFirst est un boolean. Même logique pour even as isEven, odd as isOdd, etc. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Pourquoi it faut combiner * avec ngFor ? Dans Angular, * est pour les directives qui pourrait changer la structure de l’affichage. ngFor ajoute ou supprime les éléments, il change la structure de la page, donc, il faut mettre * avant ngFor. Pour le ngIf, il peut cacher un élément, donc, il est utilisé aussi avec *. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Question pour vous : Est-ce qu’il faut utiliser * pour ngSwitchCase ? <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> 您还在使用 div *10 来构建网页元素吗？ 你想摆脱这份辛苦的工作吗？<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 如今，我们很少逐页构建 *.html 文件。 另一方面，Angular 广泛用于响应式应用程序。 Angular 提供了一个解决方案： 指令 <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fw-bold&quot;&gt;"/>ngFor<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, 是其结构中的 4 个重要概念之一。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 回到灵活显示问题，我们可以使用 ngFor 指令。 但要小心，我们不能像使用 ngClass 一样直接放入 ngFor。 您必须将 * 与 ngFor 结合起来。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 这是我们网页上的示例： <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img src=&quot;assets/images/exemple_ngFor.jpg&quot; alt=&quot;ngFor&quot; style=&quot;width: 60vw;&quot;&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 为了为 Tic-Tac-Toe 游戏构建 9 个盒子，我们将 *ngFor 放入 div 中，然后 ngFor 将元素读取到以下形式的向量中： <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fw-bold&quot;&gt;"/>let element of vecteur; index as i; <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 随后，我们可以将信息绑定到我们的页面中。 由于我们的向量包含 9 个元素，因此像这样构造了 9 个盒子。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 以上是基本的语法形式。 ngFor 提供了其他属性来满足我们的需求。 如果我们想识别第一个元素，我们只需添加 first as isFirst. 在本例中 isFirst 是一个布尔值。 同样的逻辑， even as isEven, odd as isOdd, etc. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 为什么需要将 * 与 ngFor 结合起来？ 在 Angular 中，* 表示可以更改显示结构的指令。 ngFor 添加或删除元素，它会改变页面的结构，因此，必须在 ngFor 之前添加 *。 对于ngIf来说，它可以隐藏一个元素，所以也和*一起使用。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 留给您的问题： ngSwitchCase 应该使用 * 吗？ <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">85,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1972857484910762144" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima magni dignissimos enim quas, esse animi molestias sint velit laudantium repudiandae molestiae quisquam possimus debitis quos laboriosam. Totam, rem fugiat!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Saepe, quasi nam sit itaque iure labore optio quos voluptates totam odio, similique blanditiis delectus minus officia recusandae. Ipsam rerum dolore voluptates saepe officiis reprehenderit recusandae, earum ea facilis ab.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Nihil nobis repudiandae rem autem non earum provident molestiae! Ipsa quaerat minima repellat ducimus error commodi, qui atque, et consectetur cumque exercitationem facilis tempora maxime. Animi deleniti laudantium labore incidunt.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ratione, ipsum rem! Nemo incidunt accusantium consectetur nostrum quo officia, facere beatae repellendus eaque expedita error ut pariatur minus non unde ullam, voluptatum iure itaque inventore labore fugiat a. Ex?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Exercitationem magni voluptas quod nostrum laboriosam, earum tempore dignissimos, quae, illum non dolorum officia. Exercitationem doloribus iste at, accusamus facilis doloremque voluptatibus adipisci, dignissimos qui eaque modi dicta reprehenderit corporis?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, molestiae odio adipisci, enim alias beatae natus, exercitationem maiores quisquam doloribus voluptatum consequuntur. Amet eaque nesciunt neque voluptate officia id quidem.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ex tempore quo quod at iure sint praesentium nemo reprehenderit sequi, placeat, fugiat voluptate, pariatur quos quas accusantium vitae sapiente temporibus. Quis totam, iste error doloremque placeat aspernatur doloribus eaque?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Illo, fugiat provident quae ipsum odio dolorem labore? Nesciunt dicta labore iusto laborum fugit at explicabo a culpa maxime dolore, alias, amet architecto ex error. Quas magnam enim nam ducimus?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Reprehenderit quos aspernatur blanditiis consequatur dicta, qui, eum cupiditate, natus voluptas eligendi accusantium perferendis itaque repellat quae nobis nisi officiis soluta architecto autem magnam exercitationem modi aliquid labore. Voluptatum, ipsa.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Eum explicabo molestias aut beatae saepe nesciunt nihil dolores corrupti, blanditiis at accusamus modi nulla eaque officia, nobis inventore quis! Sapiente minus qui adipisci veritatis iusto nisi voluptatibus voluptas ea.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium veniam tenetur quaerat nemo officiis nulla, sed nostrum quis suscipit inventore facere consectetur rem eligendi sunt! Ad libero at perspiciatis laudantium?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Alias dignissimos officia iusto autem repellendus, rem quae, dolores adipisci animi quod, deleniti aliquid laboriosam optio laborum excepturi saepe facilis magni voluptate architecto necessitatibus quo voluptas? At ex neque consequuntur?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Mollitia facilis, illo natus maiores dolore esse, officiis quo perferendis atque doloribus earum deleniti eaque pariatur eveniet nobis nemo minus commodi blanditiis enim fugit veritatis? Magni maxime consequatur sapiente eum.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Maiores veritatis blanditiis illum sunt est laboriosam aut libero consequatur amet quod. Laudantium non repudiandae dolor accusamus architecto ab! Reprehenderit cupiditate libero voluptas officiis corporis tempore sint nisi totam nesciunt.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Hic aliquid ipsam maxime voluptatem fugit odit quam eaque amet rerum nesciunt sequi non, voluptatibus sit dolor illo facere vero! Minima ut explicabo minus aperiam aliquam excepturi blanditiis distinctio nisi.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque vero ut rerum sit officiis asperiores eaque impedit amet voluptatum dolore quis, non expedita et consectetur. Sapiente id excepturi quas.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Veniam aut corporis possimus sapiente est consequatur reprehenderit hic deleniti illo distinctio sunt sequi ea et, vero omnis dignissimos culpa tempore quas mollitia. Quibusdam, omnis non laboriosam officiis culpa et.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Libero excepturi numquam rem voluptatem mollitia eligendi enim aliquid? Consequatur minima vero mollitia a magni molestias corporis autem ipsum tempora beatae quibusdam temporibus aperiam et necessitatibus blanditiis, sapiente laborum saepe.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Possimus inventore sunt vitae hic maxime consectetur eius accusamus blanditiis! Itaque expedita vitae suscipit, eligendi beatae facere necessitatibus, corporis deserunt nesciunt sequi esse dolor quaerat illo mollitia vero saepe numquam.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ex nam porro officia rem, similique doloremque numquam sint tempora, animi excepturi illum, iste minus distinctio minima eveniet aliquid! Aspernatur magnam sint quos porro? Explicabo suscipit ipsa perspiciatis quae deleniti.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae, cupiditate placeat architecto voluptas aliquam eligendi sunt. Temporibus consectetur a nesciunt iusto, iste architecto nulla sapiente commodi, magni error accusamus.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Totam ratione pariatur cum, tempora laboriosam porro veniam officia harum. Incidunt architecto aspernatur in voluptatum. Numquam, itaque quia. Tenetur distinctio, earum dolor corrupti in ab placeat nostrum obcaecati natus praesentium.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Commodi omnis distinctio placeat, magni dignissimos nostrum illo consequatur dolore delectus eius sit laudantium et cupiditate iste rem? Alias suscipit quos nihil nisi deleniti sequi quidem reiciendis minima eveniet soluta!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Accusamus consequuntur doloribus explicabo voluptates cumque, sint provident dolores ab aperiam est iste perferendis saepe officiis beatae delectus nemo rerum, placeat fugit natus expedita. Quibusdam distinctio adipisci nostrum ullam recusandae.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Architecto fugiat iure fuga mollitia! Ex nam eum, velit fugit maiores totam ea porro voluptatibus laborum laboriosam tempora excepturi hic est impedit voluptas voluptates facilis cumque! Tempore modi labore ratione!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima magni dignissimos enim quas, esse animi molestias sint velit laudantium repudiandae molestiae quisquam possimus debitis quos laboriosam. Totam, rem fugiat!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Saepe, quasi nam sit itaque iure labore optio quos voluptates totam odio, similique blanditiis delectus minus officia recusandae. Ipsam rerum dolore voluptates saepe officiis reprehenderit recusandae, earum ea facilis ab.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Nihil nobis repudiandae rem autem non earum provident molestiae! Ipsa quaerat minima repellat ducimus error commodi, qui atque, et consectetur cumque exercitationem facilis tempora maxime. Animi deleniti laudantium labore incidunt.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ratione, ipsum rem! Nemo incidunt accusantium consectetur nostrum quo officia, facere beatae repellendus eaque expedita error ut pariatur minus non unde ullam, voluptatum iure itaque inventore labore fugiat a. Ex?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Exercitationem magni voluptas quod nostrum laboriosam, earum tempore dignissimos, quae, illum non dolorum officia. Exercitationem doloribus iste at, accusamus facilis doloremque voluptatibus adipisci, dignissimos qui eaque modi dicta reprehenderit corporis?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, molestiae odio adipisci, enim alias beatae natus, exercitationem maiores quisquam doloribus voluptatum consequuntur. Amet eaque nesciunt neque voluptate officia id quidem.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ex tempore quo quod at iure sint praesentium nemo reprehenderit sequi, placeat, fugiat voluptate, pariatur quos quas accusantium vitae sapiente temporibus. Quis totam, iste error doloremque placeat aspernatur doloribus eaque?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Illo, fugiat provident quae ipsum odio dolorem labore? Nesciunt dicta labore iusto laborum fugit at explicabo a culpa maxime dolore, alias, amet architecto ex error. Quas magnam enim nam ducimus?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Reprehenderit quos aspernatur blanditiis consequatur dicta, qui, eum cupiditate, natus voluptas eligendi accusantium perferendis itaque repellat quae nobis nisi officiis soluta architecto autem magnam exercitationem modi aliquid labore. Voluptatum, ipsa.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Eum explicabo molestias aut beatae saepe nesciunt nihil dolores corrupti, blanditiis at accusamus modi nulla eaque officia, nobis inventore quis! Sapiente minus qui adipisci veritatis iusto nisi voluptatibus voluptas ea.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium veniam tenetur quaerat nemo officiis nulla, sed nostrum quis suscipit inventore facere consectetur rem eligendi sunt! Ad libero at perspiciatis laudantium?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Alias dignissimos officia iusto autem repellendus, rem quae, dolores adipisci animi quod, deleniti aliquid laboriosam optio laborum excepturi saepe facilis magni voluptate architecto necessitatibus quo voluptas? At ex neque consequuntur?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Mollitia facilis, illo natus maiores dolore esse, officiis quo perferendis atque doloribus earum deleniti eaque pariatur eveniet nobis nemo minus commodi blanditiis enim fugit veritatis? Magni maxime consequatur sapiente eum.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Maiores veritatis blanditiis illum sunt est laboriosam aut libero consequatur amet quod. Laudantium non repudiandae dolor accusamus architecto ab! Reprehenderit cupiditate libero voluptas officiis corporis tempore sint nisi totam nesciunt.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Hic aliquid ipsam maxime voluptatem fugit odit quam eaque amet rerum nesciunt sequi non, voluptatibus sit dolor illo facere vero! Minima ut explicabo minus aperiam aliquam excepturi blanditiis distinctio nisi.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque vero ut rerum sit officiis asperiores eaque impedit amet voluptatum dolore quis, non expedita et consectetur. Sapiente id excepturi quas.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Veniam aut corporis possimus sapiente est consequatur reprehenderit hic deleniti illo distinctio sunt sequi ea et, vero omnis dignissimos culpa tempore quas mollitia. Quibusdam, omnis non laboriosam officiis culpa et.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Libero excepturi numquam rem voluptatem mollitia eligendi enim aliquid? Consequatur minima vero mollitia a magni molestias corporis autem ipsum tempora beatae quibusdam temporibus aperiam et necessitatibus blanditiis, sapiente laborum saepe.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Possimus inventore sunt vitae hic maxime consectetur eius accusamus blanditiis! Itaque expedita vitae suscipit, eligendi beatae facere necessitatibus, corporis deserunt nesciunt sequi esse dolor quaerat illo mollitia vero saepe numquam.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ex nam porro officia rem, similique doloremque numquam sint tempora, animi excepturi illum, iste minus distinctio minima eveniet aliquid! Aspernatur magnam sint quos porro? Explicabo suscipit ipsa perspiciatis quae deleniti.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae, cupiditate placeat architecto voluptas aliquam eligendi sunt. Temporibus consectetur a nesciunt iusto, iste architecto nulla sapiente commodi, magni error accusamus.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Totam ratione pariatur cum, tempora laboriosam porro veniam officia harum. Incidunt architecto aspernatur in voluptatum. Numquam, itaque quia. Tenetur distinctio, earum dolor corrupti in ab placeat nostrum obcaecati natus praesentium.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Commodi omnis distinctio placeat, magni dignissimos nostrum illo consequatur dolore delectus eius sit laudantium et cupiditate iste rem? Alias suscipit quos nihil nisi deleniti sequi quidem reiciendis minima eveniet soluta!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Accusamus consequuntur doloribus explicabo voluptates cumque, sint provident dolores ab aperiam est iste perferendis saepe officiis beatae delectus nemo rerum, placeat fugit natus expedita. Quibusdam distinctio adipisci nostrum ullam recusandae.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Architecto fugiat iure fuga mollitia! Ex nam eum, velit fugit maiores totam ea porro voluptatibus laborum laboriosam tempora excepturi hic est impedit voluptas voluptates facilis cumque! Tempore modi labore ratione!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">134,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5240486575774199437" datatype="html">
+        <source>Plus à venir...</source>
+        <target>敬请期待</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7719625951974654366" datatype="html">
+        <source>© Bingqing Shi, Cégep André-Laurendeau, automne 2023</source>
+        <target>© Bingqing Shi, Cégep André-Laurendeau, 2023年秋</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5096661874646017582" datatype="html">
+        <source>Changer de langue</source>
+        <target>更改语言</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4134147244760971282" datatype="html">
+        <source>Français</source>
+        <target>法语</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2479039440687873737" datatype="html">
+        <source>Anglais</source>
+        <target>英语</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="97696163400198624" datatype="html">
+        <source>Chinois</source>
+        <target>中文</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4625459039493049168" datatype="html">
+        <source>Nous contacter</source>
+        <target>联系我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5363451304863092478" datatype="html">
+        <source>Nom</source>
+        <target>姓</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7499021790871181533" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Nom</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>姓</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8566134008672391258" datatype="html">
+        <source>Lettre, tiret, apostrophe et espace sont acceptés <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>(il faut aussi débuter par une lettre, mais PAS par tiret, apostrophe ou espace)</source>
+        <target>接受字母、连字符、撇号和空格 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>（您还必须以字母开头，但不能以连字符、撇号或空格）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3942107207784466817" datatype="html">
+        <source>Prenom</source>
+        <target>名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3750058722190407597" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Prénom</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8802290194458973292" datatype="html">
+        <source>xxx@exemple.com</source>
+        <target>xxx@example.com</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2549054558653041833" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Courriel</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>电子邮箱</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="892234129190510726" datatype="html">
+        <source>L&apos;entrée n&apos;est pas sous forme d&apos;une address courriel</source>
+        <target>输入不符合邮件地址格式</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1430919552515564581" datatype="html">
+        <source>Donner quelques mots...</source>
+        <target>请留言</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1931109037700882171" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Commentaire</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>评论及建议</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1877650748983828455" datatype="html">
+        <source> Il laisse <x id="INTERPOLATION" equiv-text="{{250 - newComment.commentaire.length + &apos; caractères possibles&apos;}}"/> </source>
+        <target> 还有 <x id="INTERPOLATION" equiv-text="{{250 - newComment.commentaire.length + &apos; 字符&apos;}}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8204633410574079688" datatype="html">
+        <source>Merci de votre précieux commentaire.</source>
+        <target>感谢您宝贵的建议。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-commentaire/form-commentaire.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6340444761548510131" datatype="html">
+        <source>Voir un événement</source>
+        <target>查看事件</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6365601462398827936" datatype="html">
+        <source>Identificateur</source>
+        <target>事件ID</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5339682717316722033" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Identificateur</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>事件ID</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6759683368056201602" datatype="html">
+        <source>8 Caractères majuscules ou chiffres seulement</source>
+        <target>仅限 8 个大写字符或数字</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-consult-event/form-consult-event.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4093678587009047044" datatype="html">
+        <source>Créer un événement</source>
+        <target>创建一个事件</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4344217547984369556" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>Confirmation du mot de passe</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>确认密码</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8486462107013677260" datatype="html">
+        <source>La confirmation n&apos;est pas conforme au mot de passe</source>
+        <target>确认与密码不一致</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4698839326532656606" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>J&apos;ai lu et j&apos;accepte les conditions d&apos;utilisation </source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger p-2&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>我已阅读并接使用受条款 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3098525206837510782" datatype="html">
+        <source>Consulter les conditions d&apos;utilisation</source>
+        <target>查看使用条款</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6414029978907336654" datatype="html">
+        <source>Vous devez accepter avant de soumettre</source>
+        <target>提交前必须同意</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4193033390814437825" datatype="html">
+        <source>Votre événement est créé.</source>
+        <target>您已创建事件</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8442651072667372080" datatype="html">
+        <source>Consulter événements</source>
+        <target>查看事件</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2883356879516436409" datatype="html">
+        <source>Conditions générales</source>
+        <target>通用条款</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="210969702905591428" datatype="html">
+        <source>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime minus nobis odio, neque et, harum perferendis mollitia quis expedita quasi voluptates. Fugiat assumenda, maxime eveniet voluptas expedita soluta delectus.</source>
+        <target>该公司本身是一家非常成功的公司。 痛苦对我们来说尤其不那么可恨，在承受痛苦时，任何人都不能准备好把它们当作一种快乐。 应该避免，最有可能发生的就是选择权宜之计的快乐。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/form-create-event/form-create-event.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6840631361567460393" datatype="html">
+        <source>Activité 1</source>
+        <target>活动 1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5363102601331024576" datatype="html">
+        <source>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex suscipit obcaecati numquam aliquam, temporibus minima quia nihil repudiandae dignissimos. Tempore dicta ducimus et sed provident consequatur culpa quidem quas?</source>
+        <target>该公司本身是一家非常成功的公司。 痛苦对我们来说尤其不那么可恨，在承受痛苦时，任何人都不能准备好把它们当作一种快乐。 应该避免，最有可能发生的就是选择权宜之计的快乐。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1310616266563816886" datatype="html">
+        <source>Activité 2</source>
+        <target>活动 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="525265912097422909" datatype="html">
+        <source>Réunion à venir</source>
+        <target>敬请期待会议</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="157057880828905843" datatype="html">
+        <source>Consulter les réunions</source>
+        <target>查询会议</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="382356804328429306" datatype="html">
+        <source>Entrez une plage de dates</source>
+        <target>输入日期范围</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2607901200593018216" datatype="html">
+        <source>date début</source>
+        <target>开始日期</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6292080352054528811" datatype="html">
+        <source>date fin</source>
+        <target>结束日期</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5805444958787822221" datatype="html">
+        <source>MM/JJ/AAAA – MM/JJ/AAAA</source>
+        <target>MM/DD/YYYY – MM/DD/YYYY</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5296831552042152798" datatype="html">
+        <source>Date de début invalid</source>
+        <target>开始日期无效</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1021652404191946832" datatype="html">
+        <source>Date de fin invalide</source>
+        <target>结束日期无效</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/meeting/meeting.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>documen
+      </trans-unit>
+      <trans-unit id="5886050965042785601" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-house&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-house&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4895326106573044490" datatype="html">
+        <source>Documentation</source>
+        <target>文档</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/document/document.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4651293512297224684" datatype="html">
+        <source>Enregistrement</source>
+        <target>注册</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5628387589738064960" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus me-2&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Nouvel événement</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus me-2&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>新事件</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1056134024946888242" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-regular fa-calendar me-2&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Voir un événement</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-regular fa-calendar me-2&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>查看一个事件</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6493267593380962322" datatype="html">
+        <source>Réunion</source>
+        <target>会议</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8066608938393600549" datatype="html">
+        <source>Message</source>
+        <target>信息</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1519478009034562601" datatype="html">
+        <source>Oops! Ce lien n&apos;existe pas!</source>
+        <target>Oops! Ce lien n&apos;existe pas!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2206366217100704179" datatype="html">
+        <source>Retour à la page d&apos;acceuil</source>
+        <target>返回主页</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4301440266074334741" datatype="html">
+        <source>Ou jouez un jeu: </source>
+        <target>或者玩个游戏吧！ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1027140352286631684" datatype="html">
+        <source>Choisissez un joueur ou commencer le jeu</source>
+        <target>选择图案或开始游戏</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6220144503961168965" datatype="html">
+        <source>Tour de: <x id="INTERPOLATION" equiv-text="{{tourdeX ? &apos;X&apos; : &apos;O&apos;}}"/></source>
+        <target>轮到： <x id="INTERPOLATION" equiv-text="{{tourdeX ? &apos;X&apos; : &apos;O&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6131404592213294808" datatype="html">
+        <source>Le gagnant: <x id="INTERPOLATION" equiv-text="{{tourdeX ? &apos;X&apos; : &apos;O&apos;}}"/></source>
+        <target>赢家是： <x id="INTERPOLATION" equiv-text="{{tourdeX ? &apos;X&apos; : &apos;O&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4877744772266866466" datatype="html">
+        <source>Aucun gagnant</source>
+        <target>没有赢家</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9059155436017318544" datatype="html">
+        <source>Fermer</source>
+        <target>关闭</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/aide/aide.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,87 @@
+    <!-- messages -->
+    <div class="px-5">
+        <h2 class="my-3 mt-5" i18n>Créer un message</h2>
+        <div class="p-3" *ngIf="!messageSaved; else submitStatus">
+          <form action="#" #unMessage="ngForm">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" id="nomUtilisateur" i18n-placeholder placeholder="nom d'utilisateur" name="user_name" #user_name="ngModel" minlength="4" required pattern="^[a-zA-Z][a-zA-Z0-9]+" [(ngModel)]="forUser">
+              <label for="nomUtilisateur" i18n><span class="text-danger p-2">*</span>Nom d'utilisateur</label>
+              <!-- info des erreurs -->
+              <ul class="text-danger list-unstyled" *ngIf="user_name.invalid && (user_name.touched || user_name.dirty)">
+                  <li *ngIf="user_name.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                  <li *ngIf="user_name.errors?.['minlength']" i18n>Il faut contenir au moins 8 caractères</li>
+                  <li *ngIf="user_name.errors?.['pattern']" i18n>Lettre, chiffre sont acceptés <br>(il faut aussi débuter par une lettre)</li>
+              </ul>
+          </div>
+            <div class="row">
+              <div class="col-12 col-md-6"> 
+                <div class="form-floating m-3">
+                <input type="text" class="form-control" id="nom_message" name="user_lastName" #user_lastName="ngModel" i18n-placeholder placeholder="Nom" required pattern="^[a-zA-Z]+[a-zA-Z- ']*" [(ngModel)]="newMessage.nom">
+                <label for="nom_message" i18n><span class="text-danger p-2">*</span>Nom</label>
+                <!-- info des erreurs -->
+                <ul class="text-danger list-unstyled" *ngIf="user_lastName.invalid && (user_lastName.touched || user_lastName.dirty)">
+                  <li *ngIf="user_lastName.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                  <li *ngIf="user_lastName.errors?.['pattern']" i18n>Lettre, tiret, apostrophe et espace sont acceptés <br>(il faut aussi débuter par une lettre, mais PAS par tiret, apostrophe ou espace)</li>
+                </ul> 
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-floating m-3">
+                  <input type="text" class="form-control" id="prenom_message" name="user_firstName" #user_firstName="ngModel" i18n-placeholder placeholder="Prenom" required pattern="^[a-zA-Z]+[a-zA-Z- ']*" [(ngModel)]="newMessage.prenom">
+                  <label for="prenom_message" i18n><span class="text-danger p-2">*</span>Prénom</label>
+                  <!-- info des erreurs -->
+                  <ul class="text-danger list-unstyled" *ngIf="user_firstName.invalid && (user_firstName.touched || user_firstName.dirty)">
+                    <li *ngIf="user_firstName.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                    <li *ngIf="user_firstName.errors?.['pattern']" i18n>Lettre, tiret, apostrophe et espace sont acceptés <br>(il faut aussi débuter par une lettre, mais PAS par tiret, apostrophe ou espace)</li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-floating m-3">
+                        <input type="email" class="form-control" id="courriel_message" name="user_email" #user_email="ngModel" i18n-placeholder placeholder="xxx@exemple.com" required pattern="^[\w-.]+@[\w-.]+[.][a-zA-Z]+$" [(ngModel)]="newMessage.email">
+                        <label for="courriel_message" i18n><span class="text-danger p-2">*</span>Courriel</label>
+                        <!-- info des erreurs -->
+                        <ul class="text-danger list-unstyled" *ngIf="user_email.invalid && (user_email.touched || user_email.dirty)">
+                          <li *ngIf="user_email.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                          <li *ngIf="user_email.errors?.['pattern']" i18n>L'entrée n'est pas sous forme d'une address courriel</li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating m-3">
+                        <input type="tel" class="form-control" id="telephone" name="user_telephone" #user_telephone="ngModel" i18n-placeholder placeholder="xxx-xxx-xxxx" required pattern="^[\d]{3}-[\d]{3}-[\d]{4}" [(ngModel)]="newMessage.telephone">
+                        <label for="courriel_message" i18n><span class="text-danger p-2">*</span>Téléphone</label>
+                        <!-- info des erreurs -->
+                        <ul class="text-danger list-unstyled" *ngIf="user_telephone.invalid && (user_telephone.touched || user_telephone.dirty)">
+                          <li *ngIf="user_telephone.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                          <li *ngIf="user_telephone.errors?.['pattern']" i18n>L'entrée n'est pas sous forme d'un numéro de téléphone "xxx-xxx-xxxx"</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="form-floating m-3">
+              <textarea id="message" name="createMessage" #createMessage="ngModel" class="form-control" i18n-placeholder placeholder="Donner quelques mots..." style="height: 200px" required maxlength="250" [(ngModel)]="newMessage.message"></textarea>
+              <label for="createMessage" i18n><span class="text-danger p-2">*</span>Message</label>
+              <!-- info : combien de caractères possibles -->
+              <div class="text-danger" *ngIf="newMessage.message && newMessage.message.length < 250  && ( createMessage.touched || createMessage.dirty)" i18n>
+                Il laisse {{250 - newMessage.message.length + ' caractères possibles'}}
+              </div>
+            </div>
+            <p class="fw-light fst-italic text-secondary" i18n><span class="text-danger p-2">*</span>champ obligatoire</p>
+            <div class="text-center mt-4">
+              <input type="submit" i18n-value value="Soumettre" class="btn btn-dark me-3" [disabled]="!unMessage.valid" (click)="saveMessage()">
+              <input type="reset" value="Effacer" class="btn btn-dark ms-3">
+            </div>
+          </form>
+        </div>
+      
+        <ng-template #submitStatus>
+          <h4 i18n *ngIf="messageSaved">Votre message est sauvegardé.</h4>
+          <div *ngIf="messageError.length !== 0"></div>
+          <div class="text-center"><div class="btn btn-dark m-3">Retour</div></div>
+        </ng-template>
+        <br><br><br>
+      </div>
+  

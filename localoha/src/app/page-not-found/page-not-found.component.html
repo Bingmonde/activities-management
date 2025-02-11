@@ -1,0 +1,36 @@
+<div class="px-5">
+<h4 class="pt-3" i18n>Oops! Ce lien n'existe pas!</h4>
+<div class="text-center"><button class="btn btn-dark my-4" (click)="goHome()" i18n>Retour à la page d'acceuil</button></div>
+
+<hr>
+<p i18n>Ou jouez un jeu: </p>
+<div class="container">
+    <div class="row">
+        <p class="text-center" i18n >Choisissez un joueur ou commencer le jeu</p>
+        <button class="btn btn-warning col-1 offset-4" (click)="commencer()" [disabled]="tourdeX || jeuCommence"  [ngClass]="tourdeX? 'shadow': ''">X</button>
+        <button class="btn btn-warning col-1 offset-2" (click)="commencer()" [disabled]="!tourdeX || jeuCommence" [ngClass]="!tourdeX? 'shadow': ''">O</button>
+        <p class="text-center" i18n>Tour de: {{tourdeX ? 'X' : 'O'}}</p>
+        <p *ngIf="hasWiner" class="text-center text-danger" i18n>Le gagnant: {{tourdeX ? 'X' : 'O'}}</p>
+        <p *ngIf="compteur === 9 && !hasWiner" class="text-center" i18n>Aucun gagnant</p>
+
+    </div>
+    
+    <div class="row" [ngStyle]="{width:'16vw'}" id="tic-tac-toa">
+        <div *ngFor="let box of ticTacToa; index as i" class="col-4">
+            <button class="border border-2 border-dark bg-light m-1 d-flex align-items-center justify-content-center"
+            [ngStyle]="{width:'5vw',height:'5vw',fontSize: '3vw'}"
+            (click)="nextMove(i)"
+            [disabled]="ticTacToa[i].click || hasWiner">{{ ticTacToa[i].symbol}}
+            </button>
+        </div>
+    </div>
+    
+</div>
+<br><br><br><br>
+
+
+
+</div>
+
+
+

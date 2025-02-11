@@ -1,0 +1,32 @@
+
+
+<div class="container-fluid">
+    <app-logo></app-logo>
+    <app-menu 
+    (showAideMenu)="receiveShowAide()"
+    (sendCurrentRouter)="receiveUrl($event)"
+    [list_aide_forMenu]="list_aides"
+    ></app-menu>
+    <app-connexion></app-connexion>
+
+
+<div class="container-fluid" id="routerAide">
+    <div class="row">
+        <div [ngClass]="showAide ? 'col-9' : 'col'" id="routerOutlet">
+            <router-outlet></router-outlet>
+        </div>
+        
+        <div class="col-3" *ngIf="showAide" id="aides">
+            <app-aide 
+            (hideAide)="receiveHideAide()"
+            [aideFromApp]="currentAide"></app-aide>
+        </div>
+    </div>
+</div>
+<!-- info sur l'organisation -->
+<div *ngIf="currentRouter=='/'" style="background-color: #FFFAF0; height: 15vh;">
+    <div class="align-items-center text-center p-5 h3" i18n>À propos de nous</div>
+    <br><br>
+</div>
+<app-footer></app-footer>
+</div>

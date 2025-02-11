@@ -1,0 +1,106 @@
+<div class="px-5">
+    <h2 class="my-3 mt-5" i18n>Créer une réunion</h2>
+    <div *ngIf="loginStatus">
+      <div class="text-danger">Vous devez vous connecter avant de créer une réunion</div>
+      <button div class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#login">Connecter</button>
+    </div>
+
+    <!-- <form action="#" #uneReunion="ngForm"> -->
+        <div class="form-floating m-3">
+          <input type="text" class="form-control" id="titre" i18n-placeholder placeholder="Titre de la réunion" name="meetingTitle" #meetingTitle="ngModel" minlength="4" required [(ngModel)]="meeting.title">
+          <label for="title" i18n><span class="text-danger p-2">*</span>Titre</label>
+          <ul class="text-danger list-unstyled" *ngIf="meetingTitle.invalid && (meetingTitle.touched || meetingTitle.dirty)">
+              <li *ngIf="meetingTitle.errors?.['required']" i18n>Ce champ est obligatoire</li>
+              <li *ngIf="meetingTitle.errors?.['minlength']" i18n>Il faut contenir au moins 4 caractères</li>
+          </ul>
+        </div>
+        <div class="form-floating m-3">
+            <textarea id="desc" class="form-control" i18n-placeholder placeholder="Description" style="height: 200px" name="meetingDesc" #meetingDesc="ngModel" minlength="10" required [(ngModel)]="meeting.describe"></textarea>
+            <label for="desc" i18n><span class="text-danger p-2">*</span>Description</label>
+            <ul class="text-danger list-unstyled" *ngIf="meetingDesc.invalid && (meetingDesc.touched ||meetingDesc.dirty)">
+                <li *ngIf="meetingDesc.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                <li *ngIf="meetingDesc.errors?.['minlength']" i18n>Il faut contenir au moins 10 caractères</li>
+            </ul>
+        </div>
+        <div class="form-floating m-3">
+            <input type="text" class="form-control" id="location" i18n-placeholder placeholder="Location" name="location" #location="ngModel" required [(ngModel)]="meeting.location">
+            <label for="location" i18n><span class="text-danger p-2">*</span>Location</label>
+            <ul class="text-danger list-unstyled" *ngIf="location.invalid && (location.touched || location.dirty)">
+                <li *ngIf="location.errors?.['required']" i18n>Ce champ est obligatoire</li>
+            </ul>
+        </div>
+
+        <div class="m-3">
+            Les dates proposées: <button class="btn ms-2 text-white" style="background-color: #366347" (click)="selectDate()">Ajouter une date<i class="fa-solid fa-plus mx-2"></i></button>
+        </div>
+
+        <table class="table w-75 mx-auto" *ngIf="dates.length !== 0">
+          <thead>
+            <tr>
+              <th scope="col">Option</th>
+              <th scope="col">Début</th>
+              <th scope="col">Fin</th>
+              <th scope="col">Durée</th>
+              <th scope="col">Supprimer</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider" *ngFor="let date of dates ; index as i">
+            <tr>
+              <th scope="row">{{i+1}}</th>
+              <td>{{date.d_start | date:'yyyy-MM-dd HH:mm'}}</td>
+              <td>{{date.d_end  | date:'yyyy-MM-dd HH:mm'}}</td>
+              <td>{{(date.d_end.getTime() - date.d_start.getTime())/(1000*60)}} minutes</td>
+              <td><div class="btn btn-link" (click)="deleteDate(i)"><i class="fa-solid fa-trash"></i></div></td>
+            </tr>
+          </tbody>
+        </table>        
+
+        <div class="w-75 ms-5 mt-2" *ngIf="showAdd">
+            <div class="m-3">La durée choisie: </div>
+            <div class="input-group m-3" name="duration">
+                <input type="radio" class="btn-check" name="options-base" id="30" value="30" checked (change)="showCustomedDate = false" [(ngModel)]="duration">
+                <label class="btn btn-outline-warning text-dark" for="30">30 minutes</label>
+
+                <input type="radio" class="btn-check" name="options-base" id="60" value="60" (change)="showCustomedDate = false" [(ngModel)]="duration">
+                <label class="btn btn-outline-warning text-dark" for="60">60 minutes</label>
+
+                <input type="radio" class="btn-check" name="options-base" id="90" value="90" (change)="showCustomedDate = false" [(ngModel)]="duration">
+                <label class="btn btn-outline-warning text-dark" for="90">90 minutes</label>
+
+                <input type="radio" class="btn-check" name="options-base" id="autre" value="autre" (change)="showCustomedDate = true">
+                <label class="btn btn-outline-warning text-dark" for="autre">Autre</label>
+            </div>
+            <div class="input-group m-3 w-75" *ngIf="showCustomedDate">
+                <span class="input-group-text" id="customed">Personnalisé</span>
+                <input type="number" class="form-control w-25" min="10" max="2460" id="customed" [(ngModel)]="duration" >
+                <span class="input-group-text">minutes</span>
+            </div>
+
+            <div class="m-3">La date choisie: </div>
+            <div class="input-group m-3 w-75">
+                <span class="input-group-text" id="customedDate">Choisissez une date</span>
+                <input type="datetime-local" class="form-control" id="customedDate" [(ngModel)]="dateSelected" [min]="fromDate" >
+            </div>
+            <button class="btn btn-outline-dark m-3" [disabled]="dateSelected == null || duration == '0' || dateSelected == dateNull" (click)="addDate()">Ajouter</button>
+        </div>
+
+        <div class="form-floating m-3">
+          Date de limite :
+            <div class="input-group m-3 w-50">
+                <span class="input-group-text" id="customedDate">Choisissez une date</span>
+                <input type="datetime-local" class="form-control" id="customedDate" [(ngModel)]="dateLimite" [min]="fromDate" [max]="toDate" (focus)="getNowTime()">
+          </div>
+        </div>
+        
+        <div class="text-center mt-4">
+          <input type="submit" i18n-value value="Soumettre" class="btn btn-dark me-3" (click)="saveMeeting()"
+          [disabled]="meeting.title.length == 0 || meeting.describe.length == 0 ||meeting.location.length==0 || dates.length == 0 || dateLimite == dateNull || dateLimite == null|| dates.length >=100 ">
+          <input type="reset" value="Effacer" class="btn btn-dark ms-3" (click)="resetAll()">
+        </div>
+      <!-- </form> -->
+
+
+      <!-- <button (click)="testToken()">testLocalStroage</button> -->
+      <br><br><br><br>
+
+</div>

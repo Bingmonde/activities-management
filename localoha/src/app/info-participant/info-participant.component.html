@@ -1,0 +1,80 @@
+<div class="pb-5 px-5">
+    <h2 class="my-3 mt-5" i18n>Votre infomation</h2>
+    <div class="pe-5 py-3 m-3">
+      <form action="#" #infoPart="ngForm">
+        <div class="form-floating m-3">
+        <input type="text" class="form-control" id="nom_participant" name="part_lastName" #part_lastName="ngModel" i18n-placeholder placeholder="Nom" required pattern="^[a-zA-Z]+[a-zA-Z-']*" [(ngModel)]="participant.last_name">
+        <label for="nom_participant" i18n><span class="text-danger p-2">*</span>Nom</label>
+        <!-- info des erreurs -->
+        <ul class="text-danger list-unstyled" *ngIf="part_lastName.invalid && (part_lastName.touched || part_lastName.dirty)">
+        <li *ngIf="part_lastName.errors?.['required']" i18n>Ce champ est obligatoire</li>
+        <li *ngIf="part_lastName.errors?.['pattern']" i18n>Lettre, tiret, apostrophe et espace sont acceptés <br>(il faut aussi débuter par une lettre, mais PAS par tiret, apostrophe ou espace)</li>
+        </ul> 
+        </div>
+        <div class="form-floating m-3">
+        <input type="text" class="form-control" id="prenom_participant" name="part_firstName" #part_firstName="ngModel" i18n-placeholder placeholder="Prenom" required pattern="^[a-zA-Z]+[a-zA-Z- ']*" [(ngModel)]="participant.first_name">
+        <label for="prenom_participant" i18n><span class="text-danger p-2">*</span>Prénom</label>
+        <!-- info des erreurs -->
+        <ul class="text-danger list-unstyled" *ngIf="part_firstName.invalid && (part_firstName.touched || part_firstName.dirty)">
+            <li *ngIf="part_firstName.errors?.['required']" i18n>Ce champ est obligatoire</li>
+            <li *ngIf="part_firstName.errors?.['pattern']" i18n>Lettre, tiret, apostrophe et espace sont acceptés <br>(il faut aussi débuter par une lettre, mais PAS par tiret, apostrophe ou espace)</li>
+        </ul> 
+        </div>
+
+        <div class="form-floating m-3">
+            <input type="email" class="form-control" id="courriel_participant" name="part_email" #part_email="ngModel" i18n-placeholder placeholder="xxx@exemple.com" required pattern="^[\w-.]+@[\w-.]+[.][a-zA-Z]+$" [(ngModel)]="participant.email">
+            <label for="courriel_participant" i18n><span class="text-danger p-2">*</span>Courriel</label>
+            <!-- info des erreurs -->
+            <ul class="text-danger list-unstyled" *ngIf="part_email.invalid && (part_email.touched ||part_email.dirty)">
+                <li *ngIf="part_email.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                <li *ngIf="part_email.errors?.['pattern']" i18n>L'entrée n'est pas sous forme d'une address courriel</li>
+            </ul>
+        </div>
+        <div class="form-floating m-3">
+            <input type="tel" class="form-control" id="telephone" name="part_telephone" #part_telephone="ngModel" i18n-placeholder placeholder="xxx-xxx-xxxx" required pattern="^[\d]{3}-[\d]{3}-[\d]{4}" [(ngModel)]="participant.telephone">
+            <label for="courriel_message" i18n><span class="text-danger p-2">*</span>Téléphone</label>
+            <!-- info des erreurs -->
+            <ul class="text-danger list-unstyled" *ngIf="part_telephone.invalid && (part_telephone.touched || part_telephone.dirty)">
+                <li *ngIf="part_telephone.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                <li *ngIf="part_telephone.errors?.['pattern']" i18n>L'entrée n'est pas sous forme d'un numéro de téléphone "xxx-xxx-xxxx"</li>
+            </ul>
+        </div>
+        <div class="form-check m-3 mt-5">
+            <input class="form-check-input" type="checkbox" id="conditions" name="confirm_conditions" #confirm_conditions="ngModel" [(ngModel)]="conditionsChecked" required>
+            <label class="form-check-label" for="conditions" i18n>
+              <span class="text-danger p-2">*</span>J'autorise localoha à utiliser mes informations pour améliorer l'expérience de service
+            </label><br>
+            <!-- info des erreurs -->
+            <div class="text-danger" *ngIf="confirm_conditions.invalid" i18n>Vous devez accepter avant de soumettre</div>
+          </div>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-dark me-3" [disabled]="!infoPart.valid" (click)="saveParticipantInfo()" data-bs-dismiss="modal" i18n>Soumettre</button>
+          <button type="reset" class="btn btn-dark ms-3">Effacer</button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+<!-- Modal collect participant info -->
+<!-- <div class="modal fade" id="participant_info" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content" style="background-color: #366347">
+      <div class="modal-header border-0 bg-light"> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 mx-3">
+          <h5 class="text-center pb-3" i18n>Info personnel</h5>
+          <input type="text" class="form-control">
+          <div class="text-center p-3 mt-3">
+            <button class="btn btn-dark" data-bs-dismiss="modal" (click)="saveParticipantInfo()" i18n>Soumettre</button> 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div> -->

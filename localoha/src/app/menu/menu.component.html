@@ -1,0 +1,68 @@
+    <!-- Navigation -->
+    <div class="container-fluid"  id="navigation" style="background-color: #366347">
+      <nav class="navbar navbar-expand-md navbar-light py-3 fix-top">
+        <div class="container">
+            <!-- <a class="navbar-brand pe-5" href="#">Brand</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a routerLink="/" routerLinkActive="active" class="nav-link active text-light" aria-current="page" (click)="getLink('/')" i18n><i class="fa-solid fa-house"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLink="/documentation" i18n-routerLink routerLinkActive="active" class="nav-link text-light" (click)="getLink('/documentation')" i18n>Documentation</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" i18n>Enregistrement</a>
+                    <ul class="dropdown-menu">
+                      <li><a routerLink="/creerUtilisateur" i18n-routerLink routerLinkActive="active" class="dropdown-item" (click)="getLink('/creerUtilisateur')" i18n><i class="fa-solid fa-plus me-2"></i>Nouveau compte</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a routerLink="/reunion" i18n-routerLink routerLinkActive="active" class="nav-link text-light" (click)="getLink('/reunion')" i18n>Réunion</a>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" i18n>Réunion</a>
+                    <ul class="dropdown-menu" style="width: 9vw;">
+                      <li><a routerLink="/creerReunion" i18n-routerLink routerLinkActive="active" class="dropdown-item" (click)="getLink('/creerReunion')" i18n><i class="fa-solid fa-plus me-2"></i>nouveau réunion</a></li>
+                      <li *ngIf="!loginStatus" class="dropdown-item"><i class="fa-solid fa-calendar-days me-2"></i>Mes réunions
+                        <ul>
+                          <li *ngFor="let meet of meetingIdHistory; index as i">
+                            <a [routerLink]="['/reunion', actualUser, meet]" i18n-routerLink routerLinkActive="active" class="dropdown-item" i18n>{{meet}}</a>
+                          </li>
+                          <li *ngFor="let code of meetingCodeHistory; index as i">
+                            <a [routerLink]="['/reunion', code]" i18n-routerLink routerLinkActive="active" class="dropdown-item" i18n>{{code}}</a>
+                          </li>
+                        </ul>
+                        
+                      </li>
+                      <li *ngIf="loginStatus"><a routerLink="/mesMessages" i18n-routerLink routerLinkActive="active" class="dropdown-item" (click)="getLink('/mesMessages')" i18n><i class="fa-solid fa-envelope me-2"></i>Mes messages</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a routerLink="/messages" i18n-routerLink routerLinkActive="active" class="nav-link text-light" (click)="getLink('/messages')" i18n>Nouveau message</a>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" i18n>Messages</a>
+                    <ul class="dropdown-menu" style="width: 9vw;">
+                      <li><a routerLink="/messages" i18n-routerLink routerLinkActive="active"  class="dropdown-item" (click)="getLink('/messages')" i18n><i class="fa-solid fa-plus me-2"></i>Nouveau message</a></li>
+                      <li *ngIf="loginStatus"><a routerLink="/mesMessages" i18n-routerLink routerLinkActive="active" class="dropdown-item" (click)="getLink('/mesMessages')" i18n><i class="fa-solid fa-envelope me-2"></i>Mes messages</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+
+            <div *ngIf="!loginStatus; else showUser" class="text-white px-3 me-3 btn btn-link" data-bs-toggle="modal" data-bs-target="#login" ><i class="fa-solid fa-user fa-lg"></i></div>
+            <ng-template #showUser>
+              <div class="btn btn-warning text-dark px-2 me-2">{{userActual.username}}</div>
+              <div><a routerLink="/mesMessages" routerLinkActive="active" class="nav-link active text-light" (click)="getLink('/mesMessages')" i18n><i class="fa-solid fa-envelope"></i></a></div>
+              <div class="text-white px-3 me-3 btn btn-link" (click)="logout()"><i class="fa-solid fa-right-from-bracket fa-lg"></i></div>
+            </ng-template>
+            <div class="text-white" role="button" style="text-decoration: none" (click)="showAide()">
+              <i class="fa-regular fa-circle-question fa-lg"></i>
+            </div>
+        </div>
+      </nav>
+    </div>

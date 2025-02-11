@@ -1,0 +1,57 @@
+<!-- Modal login -->
+<div class="modal fade" id="login" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="background-color: #366347">
+        <div class="modal-header border-0 bg-light"> 
+          <img src="assets/images/logo.png" alt="localoha" style="height: 2vw;">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="resetAll()"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 mx-3" *ngIf="!connexSucces; else connexResponse">
+            <h2 class="text-center pb-3" i18n>Connexion</h2>
+
+            <form action="#" #connexion="ngForm">
+              <div class="form-floating m-3">
+                <input type="text" class="form-control" id="nom_utilisateur" #connex_user="ngModel" name="connex_user" pattern="^[a-zA-Z][a-zA-Z0-9]+" i18n-placeholder placeholder="Nom d'utilisateur" required [(ngModel)]="user_connex.username">
+                <label for="nom_utilisateur" i18n><span class="text-danger p-2">*</span>Nom d'utilisateur</label>
+                <!-- info des erreurs -->
+                <ul class="text-danger list-unstyled" *ngIf="connex_user.invalid && (connex_user.touched || connex_user.dirty)">
+                  <li *ngIf="connex_user.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                  <li *ngIf="connex_user.errors?.['pattern']" i18n>Les lettres et chiffres seulement<br>(il faut aussi débuter par une lettre)</li>
+                </ul> 
+              </div>
+              <div class="form-floating m-3">
+                <input type="password" class="form-control" id="mdp_utilisateur" #connex_pw="ngModel" name="connex_pw" minlength="8" i18n-placeholder placeholder="Mot de passe" required [(ngModel)]="user_connex.password">
+                <label for="mdp_utilisateur" i18n><span class="text-danger p-2">*</span>Mot de passe</label>
+                <!-- info des erreurs -->
+                <ul class="text-danger list-unstyled" *ngIf="connex_pw.invalid && (connex_pw.touched || connex_pw.dirty)">
+                  <li *ngIf="connex_pw.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                  <li *ngIf="connex_pw.errors?.['minlength']" i18n>Il faut contenir au moins 8 caractères</li>
+                </ul> 
+              </div>
+
+              <p class="fw-light fst-italic text-white" i18n><span class="text-danger p-2">*</span>champ obligatoire</p>
+              <div *ngIf="connex_error.length !== 0 " class="text-center">
+                <p class="text-danger">{{connex_error}}</p>
+              </div>                       
+              <div class="text-center p-3 mt-3">
+                <button class="btn btn-dark" [disabled]="!connexion.valid" (click)="connex()" i18n>Soumettre</button> 
+              </div>
+
+              
+
+              <div class="text-center text-white">
+                Vous n'avez pas encore de compte?<br>
+                <a routerLink="/creerUtilisateur" class="text-dark" data-bs-dismiss="modal" aria-label="Close" (click)="resetAll()">Créer un compte</a>
+              </div>
+            </form>
+          </div>
+          <ng-template #connexResponse>
+          <div class="text-center text-white h5">Félicitation! Vous êtes connecté(e)</div>
+          <div class="text-center"><button class="btn btn-dark text-white" data-bs-dismiss="modal" i18n>Fermer</button> </div>
+          </ng-template>
+        </div>
+        
+      </div>
+    </div>
+  </div>

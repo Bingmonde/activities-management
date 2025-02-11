@@ -1,0 +1,38 @@
+* {
+    padding:0px;
+    margin:0px;
+    font-size: 1vm;
+}
+
+/* 
+#navigation {
+    position: sticky;
+    top: 0;
+} */
+
+app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+
+#routerAide {
+    width: 70%;
+    margin:auto;
+}
+
+/* #routerAide {
+    display: table;
+    width: 100%;
+} */
+
+
+/* #routerOutlet, #aides{
+    display: table-cell;
+} */
+
+

@@ -1,0 +1,107 @@
+<!-- créer un événement -->
+<div class="pb-5 px-5">
+    <h2 class="my-3 mt-5" i18n>Créer un compte</h2>
+    <div class="pe-5 py-3 m-3" *ngIf="showCreateUser; else textSubmit">
+      <form action="#" #formEvent="ngForm">
+        <div class="form-floating m-3">
+            <input type="text" class="form-control" id="nomUtilisateur" i18n-placeholder placeholder="nom d'utilisateur" name="user_name" #user_name="ngModel" minlength="4" required pattern="^[a-zA-Z][a-zA-Z0-9]+" [(ngModel)]="newUser.username">
+            <label for="courriel" i18n><span class="text-danger p-2">*</span>Nom d'utilisateur</label>
+            <!-- info des erreurs -->
+            <ul class="text-danger list-unstyled" *ngIf="user_name.invalid && (user_name.touched || user_name.dirty)">
+                <li *ngIf="user_name.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                <li *ngIf="user_name.errors?.['minlength']" i18n>Il faut contenir au moins 8 caractères</li>
+                <li *ngIf="user_name.errors?.['pattern']" i18n>Lettre, chiffre sont acceptés <br>(il faut aussi débuter par une lettre)</li>
+            </ul>
+        </div>
+        <div class="form-floating m-3">
+          <input type="email" class="form-control" id="courriel" i18n-placeholder placeholder="xxx@exemple.com" name="user_email" #user_email="ngModel" required pattern="^[\w-.]+@[\w-.]+[.][a-zA-Z]+$" [(ngModel)]="newUser.email">
+          <label for="courriel" i18n><span class="text-danger p-2">*</span>Courriel</label>
+          <!-- info des erreurs -->
+          <ul class="text-danger list-unstyled" *ngIf="user_email.invalid && (user_email.touched || user_email.dirty)">
+            <li *ngIf="user_email.errors?.['required']" i18n>Ce champ est obligatoire</li>
+            <li *ngIf="user_email.errors?.['pattern']" i18n>L'entrée n'est pas sous forme d'une address courriel</li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="form-floating m-3 me-2">                
+              <input type="password" class="form-control" id="motDePasse" i18n-placeholder placeholder="Mot de passe" name="user_pw" #user_pw="ngModel" required minlength="8" [(ngModel)]="newUser.password">
+              <label for="motDePasse" i18n><span class="text-danger p-2">*</span>Mot de passe</label>
+              <!-- info des erreurs -->
+              <ul class="text-danger list-unstyled" *ngIf="user_pw.invalid && (user_pw.touched || user_pw.dirty)">
+                <li *ngIf="user_pw.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                <li *ngIf="user_pw.errors?.['minlength']" i18n>Il faut contenir au moins 8 caractères</li>
+              </ul> 
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form-floating m-3">                
+              <input type="password" class="form-control" id="confirmMDP" i18n-placeholder placeholder="Mot de passe" name="confirm_user_pw" #confirm_user_pw="ngModel" required minlength="8" [(ngModel)]="passwordConfirm">
+              <label for="confirmMDP" i18n><span class="text-danger p-2">*</span>Confirmation du mot de passe</label>
+              <!-- info des erreurs -->
+              <ul class="text-danger list-unstyled" *ngIf="confirm_user_pw.invalid && (confirm_user_pw.touched || confirm_user_pw.dirty)">
+                <li *ngIf="confirm_user_pw.errors?.['required']" i18n>Ce champ est obligatoire</li>
+                <li *ngIf="confirm_user_pw.errors?.['minlength']" i18n>Il faut contenir au moins 8 caractères</li>
+                <li *ngIf="confirm_user_pw.value !== newUser.password" i18n>La confirmation n'est pas conforme au mot de passe</li>
+              </ul> 
+              <div class="text-danger list-unstyled" *ngIf="confirm_user_pw.invalid && (confirm_user_pw.touched || confirm_user_pw.dirty)">
+              </div>
+            </div>
+          </div>
+        </div>    
+        <div class="form-floating m-3">
+          <textarea class="form-control" i18n-placeholder placeholder="Taper la clé valide" id="key" name="user_key" #user_key="ngModel" required [(ngModel)]="newUser.key"></textarea>
+          <label for="key" i18n><span class="text-danger p-2">*</span>Clé</label>
+          <!-- info des erreurs -->
+          <ul class="text-danger list-unstyled" *ngIf="user_key.touched || user_key.dirty ">
+            <li *ngIf="user_key.errors?.['required']" i18n>Ce champ est obligatoire</li>
+            <li *ngIf="user_key.value !== valideKey" i18n>La clé entrée n'est pas valide</li>
+          </ul>
+          <div class="text-warning">La clé valide: {{valideKey}}</div> 
+        </div>
+        <div class="form-check m-3 mt-5">
+          <input class="form-check-input" type="checkbox" id="conditions" name="confirm_conditions" #confirm_conditions="ngModel" [(ngModel)]="conditionsChecked" required>
+          <label class="form-check-label" for="conditions" i18n>
+            <span class="text-danger p-2">*</span>J'ai lu et j'accepte les conditions d'utilisation
+          </label><br>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#conGene" i18n>Consulter les conditions d'utilisation</a>
+          <!-- info des erreurs -->
+          <div class="text-danger" *ngIf="confirm_conditions.invalid" i18n>Vous devez accepter avant de soumettre</div>
+        </div>
+        <p class="fw-light fst-italic text-secondary" i18n><span class="text-danger p-2">*</span>champ obligatoire</p>
+        <div class="text-center">
+          <button type="submit" class="btn btn-dark me-3" [disabled]="!formEvent.valid || passwordConfirm !== newUser.password || user_key.value !== valideKey" (click)="createUser()" i18n>Soumettre</button>
+          <button type="reset" class="btn btn-dark ms-3">Effacer</button>
+        </div>
+      </form>
+    </div>
+    <ng-template #textSubmit>
+      <div *ngIf="createUserStatus.length !== 0">
+        <h4 >{{createUserStatus}} le compte : {{newUser.username}}</h4>
+      </div>
+      <div *ngIf="createUserError.length !== 0">
+        <h4 >Erreur : {{createUserError}}</h4>
+      </div>
+      <div class="mt-4 text-center">
+        <button class="btn btn-dark me-3" (click)="showCreateUser=!showCreateUser">Retour</button> ou <button div class="btn btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#login">Connecter</button>
+      </div>
+    </ng-template>
+      
+
+    <div id="conGene" class="modal fade" tabindex="1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: #366347">
+          <div class="modal-header border-0 bg-light"> 
+            <img src="assets/images/logo.png" alt="localoha" style="height: 2vw;">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-white">
+            <div class="mb-3 mx-3">
+              <h4 class="text-center pb-3" i18n>Conditions générales</h4>
+              <p i18n>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime minus nobis odio, neque et, harum perferendis mollitia quis expedita quasi voluptates. Fugiat assumenda, maxime eveniet voluptas expedita soluta delectus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

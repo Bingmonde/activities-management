@@ -1,0 +1,25 @@
+<!-- pied de page -->
+<div class="container-fluid">
+    <footer class="row text-white bg-dark p-3 position-absolut">
+        <div class="col text-start align-self-center" i18n>&copy; Bingqing Shi, Cégep André-Laurendeau, automne 2023</div>
+        <div class="col-2 offset-4">
+            <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger text-warning btn btn-outline-light rounded-pill" i18n>Changer de langue</button>
+
+        <!-- <ng-template #menu>
+        <div class="example-menu" cdkMenu>
+            <button class="example-menu-item"  cdkMenuItem i18n> <a href="https://bingwebtp2.web.app/fr-CA/" class="text-decoration-none">Français</a>  </button>
+            <button class="example-menu-item"  cdkMenuItem i18n> <a href="https://bingwebtp2.web.app/en-CA/" class="text-decoration-none">Anglais</a></button>            
+            <button class="example-menu-item"  cdkMenuItem i18n> <a href="https://bingwebtp2.web.app/zh-CN/" class="text-decoration-none">Chinois</a></button>
+        </div>
+        </ng-template> -->
+        <ng-template #menu>
+            <div class="example-menu" cdkMenu>
+                <button class="example-menu-item" (click)="selectLang('en')" cdkMenuItem i18n> Français </button>
+                <button class="example-menu-item" (click)="selectLang('fr')"  cdkMenuItem i18n> Anglais</button>            
+                <button class="example-menu-item" (click)="selectLang('zh')" cdkMenuItem i18n> Chinois</button>
+            </div>
+            </ng-template>
+        
+        </div>
+    </footer>
+</div>

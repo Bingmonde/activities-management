@@ -1,0 +1,12 @@
+<div *ngIf="aideFromApp.length !== 0">
+  <div class="text-light row ms-3" style="background-color: #366347;height: 100vh">
+    <div class="row">
+      <div class="col-1 offset-11"><div class="btn btn-outline-light btn-close pe-1 mt-3" role="button" (click)="closeAide()"></div></div>
+    </div>
+    <div class="row align-items-top">
+      <p class="ps-3 mt-0 text-center">{{aideFromApp}}</p>
+      <div class="text-center"><button class="btn btn-outline-dark my-3" (click)="closeAide()" i18n>Fermer</button></div>
+    </div>
+     
+  </div>
+</div>
